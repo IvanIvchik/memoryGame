@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="./src/favicon.ico" />
+    <title>game</title>
+</head>
+
+<body class="locked">
+    <header>
+        <div class="container">
+            <div class="logo"><img src="./src/img/обложка.jpg" alt="logo"></div>
+            <h1>Memory game</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="playing-field">
+                <div class="card" data-framework="wolf">
+                    <img class="front-face" src="./src/img/волк.jpg" alt="Wolf">
+                    <img class="back-face" src="./src/img/обложка.jpg" alt="Memory Card">
+                </div>
+                <div class="card" data-framework="cat">
+                    <img class="front-face" src="./src/img/кот.jpg" alt="Cat">
+                    <img class="back-face" src="./src/img/обложка.jpg" alt="Memory Card">
+                </div>
+                <div class="card" data-framework="hedgehog">
+                    <img class="front-face" src="./src/img/ёж.jpg" alt="hedgehog">
+                    <img class="back-face" src="./src/img/обложка.jpg" alt="Memory Card">
+                </div>
+                <div class="card" data-framework="lion">
+                    <img class="front-face" src="./src/img/лев.jpg" alt="Lion">
+                    <img class="back-face" src="./src/img/обложка.jpg" alt="Memory Card">
+                </div>
+                <div class="card" data-framework="wolf">
+                    <img class="front-face" src="./src/img/волк.jpg" alt="Wolf">
+                    <img class="back-face" src="./src/img/обложка.jpg" alt="Memory Card">
+                </div>
+                <div class="card" data-framework="lion">
+                    <img class="front-face" src="./src/img/лев.jpg" alt="Lion">
+                    <img class="back-face" src="./src/img/обложка.jpg" alt="Memory Card">
+                </div>
+                <div class="card" data-framework="fox">
+                    <img class="front-face" src="./src/img/лиса.jpg" alt="fox">
+                    <img class="back-face" src="./src/img/обложка.jpg" alt="Memory Card">
+                </div>
+                <div class="card" data-framework="raccoon">
+                    <img class="front-face" src="./src/img/енот.jpg" alt="raccoon">
+                    <img class="back-face" src="./src/img/обложка.jpg" alt="Memory Card">
+                </div>
+                <div class="card" data-framework="dog">
+                    <img class="front-face" src="./src/img/пёс.jpg" alt="dog">
+                    <img class="back-face" src="./src/img/обложка.jpg" alt="Memory Card">
+                </div>
+                <div class="card" data-framework="cat">
+                    <img class="front-face" src="./src/img/кот.jpg" alt="Cat">
+                    <img class="back-face" src="./src/img/обложка.jpg" alt="Memory Card">
+                </div>
+                <div class="card" data-framework="dog">
+                    <img class="front-face" src="./src/img/пёс.jpg" alt="dog">
+                    <img class="back-face" src="./src/img/обложка.jpg" alt="Memory Card">
+                </div>
+                <div class="card" data-framework="tiger">
+                    <img class="front-face" src="./src/img/тигр.jpg" alt="tiger">
+                    <img class="back-face" src="./src/img/обложка.jpg" alt="Memory Card">
+                </div>
+                <div class="card" data-framework="hedgehog">
+                    <img class="front-face" src="./src/img/ёж.jpg" alt="hedgehog">
+                    <img class="back-face" src="./src/img/обложка.jpg" alt="Memory Card">
+                </div>
+                <div class="card" data-framework="tiger">
+                    <img class="front-face" src="./src/img/тигр.jpg" alt="tiger">
+                    <img class="back-face" src="./src/img/обложка.jpg" alt="Memory Card">
+                </div>
+                <div class="card" data-framework="fox">
+                    <img class="front-face" src="./src/img/лиса.jpg" alt="fox">
+                    <img class="back-face" src="./src/img/обложка.jpg" alt="Memory Card">
+                </div>
+                <div class="card" data-framework="raccoon">
+                    <img class="front-face" src="./src/img/енот.jpg" alt="raccoon">
+                    <img class="back-face" src="./src/img/обложка.jpg" alt="Memory Card">
+                </div>
+            </div>
+
+            <div class="move-counter">
+                <h3>Moves:</h3><span class="moves"></span>
+            </div>
+        </div>
+
+        <div class="start-window">
+            <h2 class="name-game">Memory Game</h2>
+            <p class="game-description">The task of the game is to find a pair for each card in the least number of
+                moves. Good luck!</p>
+            <button class="start-btn btn">Start</button>
+        </div>
+
+        <div class="finish-window hidden">
+            <h3 class="congratulation"> This game is yours!</h3>
+            <span class="final-score"></span>
+            <button class="new-game-btn btn"> New game</button>
+        </div>
+
+        <div class="background"></div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="link-github">
+                <a href="https://github.com/IvanIvchik"><img src="./src/github.png" alt="github"></a>
+            </div>
+
+            <div class="copyright">
+                <p>Ivan Ivchik</p>
+                <p>2022</p>
+            </div>
+
+            <div class="link-school">
+                <a href="https://rs.school/js-stage0/"><img src="./src/rs_school_js.svg" alt="stage#0"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
